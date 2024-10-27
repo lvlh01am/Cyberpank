@@ -1,0 +1,149 @@
+/* Подключение шрифта Spacetron */
+@font-face {
+    font-family: 'Spacetron';
+    src: url('fonts/Spacetron-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, a {
+    font-family: 'Spacetron', sans-serif;
+    color: #e0e0e0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('https://media1.tenor.com/m/7LfXC60OyVkAAAAC/cyberpunk-cyberpunk-anime.gif'); /* Исходный фон */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Элементы по бокам */
+#left-side, #right-side {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+    z-index: -1;
+}
+
+#left-side {
+    left: 0;
+}
+
+#right-side {
+    right: 0;
+}
+
+header {
+    margin-top: 20px;
+    text-align: center;
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #ff00ff;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.contact-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Новый контейнер для контактов */
+.contact-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 20px; /* Внутренний отступ */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Небольшая тень для эффекта */
+    width: 300px; /* Ширина контейнера */
+}
+
+.contact-item h2 {
+    color: #ff00ff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.neon-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #00e5ff;
+    background-color: transparent;
+    border: 2px solid #00e5ff;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-shadow: 0 0 10px #00e5ff;
+    transition: all 0.3s;
+}
+
+.neon-button:hover {
+    color: #ff00ff;
+    border-color: #ff00ff;
+    text-shadow: 0 0 20px #ff00ff;
+}
+
+/* Стили для музыкальной секции */
+.music-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.music-section h2 {
+    color: #ff00ff;
+    font-size: 1.5em; /* Уменьшенный размер заголовка */
+    margin-bottom: 15px;
+}
+
+/* Новый контейнер для музыки */
+.music-box {
+    background-color: rgba(128, 0, 128, 0.7); /* Полупрозрачный фиолетовый фон */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 10px; /* Внутренний отступ */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Небольшая тень для эффекта */
+}
+
+.music-box iframe {
+    border: none; /* Убираем границу */
+    width: 300px; /* Ширина iframe */
+    height: 80px; /* Высота iframe */
+}
+
+/* Минималистичный стиль для кнопки Spotify */
+.music-button {
+    display: inline-block;
+    padding: 5px 10px; /* Уменьшенные отступы для кнопки */
+    color: #ff00ff; /* Цвет текста */
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границу */
+    font-size: 2em; /* Увеличиваем размер текста для кнопки */
+    cursor: pointer; /* Указываем, что это кнопка */
+    transition: all 0.3s;
+}
+
+.music-button:hover {
+    color: #e0e0e0; /* Цвет текста при наведении */
+    text-shadow: 0 0 20px #ff00ff; /* Эффект неона при наведении */
+}
